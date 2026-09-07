@@ -1,0 +1,1960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- Primary SEO Metadata -->
+  <title>Maxister Tooling | Precision Machining & Plastic Injection Moulding in Pune</title>
+  <meta name="description" content="Maxister Tooling provides precision CNC/VMC job work and plastic injection moulding solutions in Pune, Maharashtra. High accuracy, prototyping, tooling & production.">
+  <meta name="keywords" content="CNC machining Pune, VMC job work Pune, Plastic injection moulding Pune, Precision machining, CNC milling, Plastic components, Industrial tooling, Engineering components, Talwade, Rupeenagar">
+  <meta name="author" content="Maxister Tooling">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maxister Tooling | Precision Engineered. Quality Delivered.">
+  <meta property="og:description" content="High-precision CNC/VMC machining and custom plastic injection moulding in Pune, Maharashtra.">
+  <meta property="og:image" content="assets/images/hero-cnc-vmc.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-emblem.png">
+  <link rel="apple-touch-touch-icon" href="assets/images/logo-emblem.png">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/main.css?v=4.0">
+  <link rel="stylesheet" href="css/components.css?v=4.0">
+  <link rel="stylesheet" href="css/responsive.css?v=4.0">
+
+  <!-- Critical Styles for Automated Horizontal Industries Showcase Slider -->
+  <style>
+    .horizontal-slide-bar-wrapper {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .horizontal-slide-progress-track {
+      width: 100%;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.06);
+      position: relative;
+      overflow: hidden;
+    }
+    .horizontal-slide-progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #9A4528, #C4623F);
+      transform-origin: left center;
+    }
+    .horizontal-slide-bar {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      background: #FFFFFF;
+    }
+    .horizontal-slide-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .slide-bar-item {
+      flex: 1 1 0%;
+      min-width: 140px;
+      padding: 1.05rem 0.85rem;
+      background: transparent;
+      border: none;
+      border-right: 1px solid var(--border-color);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-family: var(--font-primary);
+      transition: all var(--transition-fast);
+      text-align: center;
+    }
+    .slide-bar-item:last-child {
+      border-right: none;
+    }
+    .slide-bar-item .slide-bar-num {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      transition: color var(--transition-fast);
+    }
+    .slide-bar-item .slide-bar-title {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      white-space: nowrap;
+      transition: color var(--transition-fast);
+    }
+    .slide-bar-item:hover {
+      background-color: var(--bg-secondary);
+    }
+    .slide-bar-item.active {
+      background-color: rgba(154, 69, 40, 0.08);
+      border-bottom: 3px solid var(--accent-burnt);
+    }
+    .slide-bar-item.active .slide-bar-num {
+      color: var(--accent-burnt);
+    }
+    .slide-bar-item.active .slide-bar-title {
+      color: var(--accent-burnt);
+      font-weight: 700;
+    }
+    .industry-showcase-stage {
+      position: relative;
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      min-height: 460px;
+    }
+    .industry-showcase-slide {
+      display: none;
+      grid-template-columns: 1.15fr 1fr;
+      align-items: stretch;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+    }
+    .industry-showcase-slide.active {
+      display: grid;
+      opacity: 1;
+      animation: fadeInSlide 0.4s ease-in-out forwards;
+    }
+    @keyframes fadeInSlide {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .showcase-visual-col {
+      position: relative;
+      background: #121212;
+      overflow: hidden;
+      min-height: 400px;
+    }
+    .showcase-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .showcase-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .industry-showcase-stage:hover .showcase-img-wrap img {
+      transform: scale(1.03);
+    }
+    .showcase-badge {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.25rem;
+      background: rgba(18, 18, 18, 0.88);
+      backdrop-filter: blur(6px);
+      color: #FFFFFF;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.85rem;
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent-burnt);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .showcase-info-col {
+      padding: 2.25rem 2.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #FFFFFF;
+    }
+    .showcase-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .showcase-icon-box {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent-burnt);
+      flex-shrink: 0;
+    }
+    .showcase-sector-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+    .showcase-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    .showcase-desc {
+      font-size: 0.925rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.15rem;
+    }
+    .showcase-features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      margin-bottom: 1.15rem;
+    }
+    .showcase-feat-item {
+      font-size: 0.85rem;
+      color: var(--text-dark);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .showcase-feat-item .feat-bullet {
+      color: var(--accent-burnt);
+      font-weight: 800;
+    }
+    .showcase-materials-strip {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 0.6rem 0.85rem;
+      font-size: 0.785rem;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .showcase-materials-strip .mat-label {
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+    .showcase-materials-strip .mat-tags {
+      font-family: var(--font-mono);
+      font-size: 0.725rem;
+      color: var(--text-muted);
+    }
+    .showcase-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+      flex-wrap: wrap;
+    }
+    .showcase-actions .btn,
+    .showcase-actions .slide-inquiry-link {
+      color: #FFFFFF !important;
+      background-color: var(--accent-burnt) !important;
+      border: 1px solid var(--accent-burnt) !important;
+      text-decoration: none !important;
+      font-weight: 700 !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      padding: 0.65rem 1.25rem !important;
+      border-radius: var(--radius-sm) !important;
+      transition: all var(--transition-fast) !important;
+    }
+    .showcase-actions .btn:hover,
+    .showcase-actions .slide-inquiry-link:hover {
+      background-color: var(--text-dark) !important;
+      border-color: var(--text-dark) !important;
+      color: #FFFFFF !important;
+    }
+    .showcase-nav-arrows {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+    .showcase-arrow-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-dark);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .showcase-arrow-btn:hover {
+      background: var(--accent-burnt);
+      color: #FFFFFF;
+      border-color: var(--accent-burnt);
+    }
+    .showcase-counter {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-burnt);
+      min-width: 54px;
+      text-align: center;
+    }
+    .industries-mobile-grid {
+      display: none;
+    }
+    @media (max-width: 960px) {
+      .industry-showcase-slide {
+        grid-template-columns: 1fr;
+      }
+      .showcase-visual-col {
+        min-height: 240px;
+        height: 240px;
+      }
+      .showcase-info-col {
+        padding: 1.5rem 1.25rem;
+      }
+      .showcase-title {
+        font-size: 1.25rem;
+      }
+      .slide-bar-item {
+        flex: 0 0 auto;
+        min-width: 130px;
+        padding: 0.75rem 0.65rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .industries-mobile-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+        width: 100%;
+      }
+      .industry-mobile-grid-card {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.65rem 0.75rem;
+        min-height: 46px;
+        background: #FFFFFF;
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-sm);
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        cursor: pointer;
+        text-align: left;
+        transition: all var(--transition-fast);
+      }
+      .industry-mobile-grid-card.active {
+        border-color: var(--accent-burnt);
+        background-color: rgba(154, 69, 40, 0.08);
+        color: var(--accent-burnt);
+      }
+      .ind-grid-num {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        font-weight: 800;
+        color: var(--accent-burnt);
+      }
+      .horizontal-slide-bar-wrapper {
+        display: none;
+      }
+      .showcase-visual-col {
+        min-height: 210px;
+        height: 210px;
+      }
+      .showcase-visual-col img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .showcase-actions {
+        flex-direction: column-reverse;
+        gap: 0.85rem;
+        align-items: stretch;
+      }
+      .showcase-actions .btn,
+      .showcase-actions .slide-inquiry-link {
+        width: 100% !important;
+        justify-content: center !important;
+        height: 46px !important;
+        min-height: 46px !important;
+      }
+      .showcase-nav-arrows {
+        justify-content: center;
+        width: 100%;
+        gap: 1.25rem;
+      }
+      .showcase-arrow-btn {
+        width: 44px;
+        height: 44px;
+        min-height: 44px;
+      }
+    }
+  </style>
+</head>
+<body class="tech-grid-bg">
+
+  <!-- ========================================================================
+       1. STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo-link" aria-label="Maxister Tooling Home">
+        <img src="assets/images/logo-navbar-light.png" alt="Maxister Tooling Logo" class="brand-logo-img" width="190" height="44">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#capabilities" class="nav-link">Capabilities</a></li>
+          <li><a href="#machinery" class="nav-link">Machinery</a></li>
+          <li><a href="#industries" class="nav-link">Industries</a></li>
+          <li><a href="#gallery" class="nav-link">Components</a></li>
+          <li><a href="#quality" class="nav-link">Quality</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm btn-quote-desktop">
+          Get A Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+          <svg class="icon-close" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
+        <li><a href="#capabilities" class="mobile-nav-link">Capabilities</a></li>
+        <li><a href="#machinery" class="mobile-nav-link">Our Machinery</a></li>
+        <li><a href="#industries" class="mobile-nav-link">Industries Served</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Product Gallery</a></li>
+        <li><a href="#quality" class="mobile-nav-link">Quality Standards</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact & Enquiry</a></li>
+      </ul>
+
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-primary" style="width: 100%;">
+          Get A Quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div style="font-size: 0.85rem; color: var(--text-muted); text-align: center;">
+          Rupeenagar, Talwade, Pune • +91 8380801307
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="eyebrow">
+            Precision Manufacturing • Pune, India
+          </div>
+
+          <h1 class="hero-title">
+            Precision Engineered.<br>
+            <span class="accent">Quality Delivered.</span>
+          </h1>
+
+          <p class="hero-description">
+            Precision tooling and manufacturing solutions for plastic injection moulding and CNC/VMC job work. Built for tight tolerances and dependable industrial delivery.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Get A Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn-secondary-outline">
+              Explore Our Services
+            </a>
+          </div>
+
+          <!-- Technical Specs Highlights -->
+          <div class="hero-specs">
+            <div class="spec-item">
+              <span class="spec-val">150 Ton</span>
+              <span class="spec-lbl">Moulding Capacity</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">1000 mm</span>
+              <span class="spec-lbl">CNC Travel Length</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-val">Pune, MH</span>
+              <span class="spec-lbl">Manufacturing Hub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Media -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero-cnc-vmc.jpg" alt="Precision CNC VMC Machine actively cutting metal with coolant" width="688" height="430" fetchpriority="high">
+            
+            <!-- Floating Technical Info Badge -->
+            <div class="hero-floating-card">
+              <div class="card-title">Precision Engineering</div>
+              <p class="card-desc">CNC • VMC • MOULDING</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. TRUST / HIGHLIGHTS STRIP
+       ======================================================================== -->
+  <section class="trust-strip" aria-label="Key Capabilities Highlights">
+    <div class="container">
+      <div class="trust-grid">
+        <!-- Pillar 1 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="22" y1="12" x2="18" y2="12"></line>
+              <line x1="6" y1="12" x2="2" y2="12"></line>
+              <line x1="12" y1="6" x2="12" y2="2"></line>
+              <line x1="12" y1="22" x2="12" y2="18"></line>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3>Precision Engineering</h3>
+            <p>Accurate & consistent machining</p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3>Quality Assurance</h3>
+            <p>Rigorous inspection protocols</p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3>Advanced Technology</h3>
+            <p>Modern CNC & VMC equipment</p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="trust-item">
+          <div class="trust-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="trust-info">
+            <h3>Customer Satisfaction</h3>
+            <p>Committed to client deadlines</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. ABOUT SECTION
+       ======================================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual">
+          <div class="about-image-wrapper">
+            <img src="assets/images/about-facility.jpg" alt="Maxister Tooling clean modern precision workshop floor in Pune" width="600" height="450" loading="lazy">
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="about-badge-text">
+              Precision Tooling<br>Manufacturing
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="about-content">
+          <div class="eyebrow">About Maxister Tooling</div>
+          <h2>Engineered For Precision.<br>Built For Performance.</h2>
+          
+          <p class="about-lead">
+            Maxister Tooling is a Pune-based manufacturing company delivering high-quality and precision solutions in Plastic Injection Moulding and CNC VMC Job Work.
+          </p>
+
+          <p>
+            We are committed to excellence through advanced technology, skilled professionals and strict quality standards, ensuring reliable and cost-effective solutions for our valued clients across diverse industrial sectors.
+          </p>
+
+          <!-- Highlight Points -->
+          <div class="about-highlights-grid">
+            <div class="highlight-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Precision Components</span>
+            </div>
+            <div class="highlight-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Advanced Machines</span>
+            </div>
+            <div class="highlight-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Skilled &amp; Experienced Team</span>
+            </div>
+            <div class="highlight-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>On-Time Delivery</span>
+            </div>
+            <div class="highlight-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Competitive Pricing</span>
+            </div>
+            <div class="highlight-point">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Customer-Centric Approach</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <a href="#contact" class="btn btn-secondary">
+              Contact Our Engineers
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. SERVICES SECTION
+       ======================================================================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow center">Our Services</div>
+        <h2>Specialized Tooling &amp; Machining Solutions</h2>
+        <p>Combining modern machinery with skilled engineering to deliver high-precision injection moulding and CNC/VMC job work.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- CARD 1: PLASTIC INJECTION MOULDING -->
+        <article class="service-card">
+          <div class="service-image-box">
+            <img src="assets/images/service-moulding.jpg" alt="Plastic injection moulding machine operating in factory" width="600" height="280" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <span class="service-tag">Moulding Solutions</span>
+            <h3 class="service-card-title">Plastic Injection Moulding</h3>
+            <p class="service-card-desc">
+              Custom plastic component manufacturing with precision, consistency and quality.
+            </p>
+
+            <ul class="service-checklist">
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Custom Plastic Parts Manufacturing</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High Precision &amp; Quality</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Short &amp; Long Production Runs</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Engineering Plastics (Nylon, POM, ABS, PP, PC)</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Insert Moulding</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Over Moulding</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Assembly Support</span>
+              </li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="service-cta-link" onclick="document.getElementById('service-select').value='Plastic Injection Moulding'">
+                Request Moulding Quote
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2: CNC & VMC JOB WORK -->
+        <article class="service-card">
+          <div class="service-image-box">
+            <img src="assets/images/service-cnc-vmc.jpg" alt="High speed CNC VMC milling metal component" width="600" height="280" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <span class="service-tag">Precision Machining</span>
+            <h3 class="service-card-title">CNC &amp; VMC Job Work</h3>
+            <p class="service-card-desc">
+              High-precision machining for components, fixtures, prototypes and production parts.
+            </p>
+
+            <ul class="service-checklist">
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>CNC Milling Job Work</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>VMC Precision Machining</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Prototype to Production</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High Accuracy &amp; Tight Tolerances</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complex 2D / 3D Components</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Quality Surface Finish</span>
+              </li>
+              <li class="service-checklist-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Fixtures &amp; Custom Tooling</span>
+              </li>
+            </ul>
+
+            <div class="service-card-footer">
+              <a href="#contact" class="service-cta-link" onclick="document.getElementById('service-select').value='CNC Job Work'">
+                Request Machining Quote
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. CAPABILITIES SECTION
+       ======================================================================== -->
+  <section class="section section-alt" id="capabilities">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow center">Our Capabilities</div>
+        <h2>From Prototype To Full Production</h2>
+        <p>Maxister Tooling provides end-to-end manufacturing support, transforming CAD specifications and engineering drawings into precise, functional parts.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        <!-- 01 -->
+        <div class="capability-card">
+          <div class="cap-num">01</div>
+          <div class="cap-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3 class="cap-title">Precision Machining</h3>
+          <p class="cap-desc">High accuracy CNC milling and VMC machining delivering tight dimensional tolerances on steel, aluminum, brass, and alloys.</p>
+        </div>
+
+        <!-- 02 -->
+        <div class="capability-card">
+          <div class="cap-num">02</div>
+          <div class="cap-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+          </div>
+          <h3 class="cap-title">Plastic Injection Moulding</h3>
+          <p class="cap-desc">Custom plastic component production up to 150 Ton clamping capacity with excellent consistency, cycle times, and surface finish.</p>
+        </div>
+
+        <!-- 03 -->
+        <div class="capability-card">
+          <div class="cap-num">03</div>
+          <div class="cap-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3 class="cap-title">Prototyping</h3>
+          <p class="cap-desc">Rapid turnaround prototype development to test fit, form, and functionality prior to mass manufacturing commitment.</p>
+        </div>
+
+        <!-- 04 -->
+        <div class="capability-card">
+          <div class="cap-num">04</div>
+          <div class="cap-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3 class="cap-title">Production Components</h3>
+          <p class="cap-desc">Dependable batch manufacturing for industrial components, precision turned parts, custom bushes, flanges, and specialized fixtures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       7. MACHINERY SECTION
+       ======================================================================== -->
+  <section class="section" id="machinery">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Manufacturing Infrastructure</div>
+        <h2>Our Machinery &amp; Equipment</h2>
+        <p>Our workshop is equipped with reliable CNC, VMC, and moulding machines to handle challenging engineering tolerances.</p>
+      </div>
+
+      <!-- Desktop Table View -->
+      <div class="machinery-table-container">
+        <table class="machinery-table" aria-label="Machinery and Equipment List">
+          <thead>
+            <tr>
+              <th scope="col">Machine Type</th>
+              <th scope="col">Capacity / Working Size</th>
+              <th scope="col" style="text-align: right;">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="machine-name">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                  <strong>CNC VMC (Vertical Machining Center)</strong>
+                </div>
+              </td>
+              <td><span class="machine-capacity">Up to 850 × 500 × 500 mm</span></td>
+              <td style="text-align: right;"><span class="machine-qty">2 Nos.</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="machine-name">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                  <strong>CNC Milling Machine</strong>
+                </div>
+              </td>
+              <td><span class="machine-capacity">Up to 1000 × 500 × 400 mm</span></td>
+              <td style="text-align: right;"><span class="machine-qty">1 No.</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="machine-name">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+                  <strong>Conventional Milling Machine</strong>
+                </div>
+              </td>
+              <td><span class="machine-capacity">—</span></td>
+              <td style="text-align: right;"><span class="machine-qty">1 No.</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="machine-name">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  <strong>Drilling Machine</strong>
+                </div>
+              </td>
+              <td><span class="machine-capacity">—</span></td>
+              <td style="text-align: right;"><span class="machine-qty">1 No.</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="machine-name">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                  <strong>Plastic Injection Moulding Machine</strong>
+                </div>
+              </td>
+              <td><span class="machine-capacity">Up to 150 Ton Clamping</span></td>
+              <td style="text-align: right;"><span class="machine-qty">1 No.</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Card List View -->
+      <div class="machinery-cards-mobile" aria-label="Machinery Cards Mobile">
+        <div class="machine-mobile-card">
+          <div class="machine-mobile-card-header">
+            <div class="machine-mobile-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              <strong>CNC VMC</strong>
+            </div>
+            <span class="machine-qty-pill">2 Nos.</span>
+          </div>
+          <div class="machine-mobile-specs">
+            <div class="spec-entry">
+              <span class="spec-k">Capacity:</span>
+              <span class="spec-v">Up to 850 × 500 × 500 mm</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-k">Quantity:</span>
+              <span class="spec-v">2 Nos.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-mobile-card">
+          <div class="machine-mobile-card-header">
+            <div class="machine-mobile-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              <strong>CNC Milling</strong>
+            </div>
+            <span class="machine-qty-pill">1 No.</span>
+          </div>
+          <div class="machine-mobile-specs">
+            <div class="spec-entry">
+              <span class="spec-k">Capacity:</span>
+              <span class="spec-v">Up to 1000 × 500 × 400 mm</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-k">Quantity:</span>
+              <span class="spec-v">1 No.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-mobile-card">
+          <div class="machine-mobile-card-header">
+            <div class="machine-mobile-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+              <strong>Conventional Milling</strong>
+            </div>
+            <span class="machine-qty-pill">1 No.</span>
+          </div>
+          <div class="machine-mobile-specs">
+            <div class="spec-entry">
+              <span class="spec-k">Capacity:</span>
+              <span class="spec-v">Precision Toolroom Milling</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-k">Quantity:</span>
+              <span class="spec-v">1 No.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-mobile-card">
+          <div class="machine-mobile-card-header">
+            <div class="machine-mobile-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              <strong>Drilling Machine</strong>
+            </div>
+            <span class="machine-qty-pill">1 No.</span>
+          </div>
+          <div class="machine-mobile-specs">
+            <div class="spec-entry">
+              <span class="spec-k">Capacity:</span>
+              <span class="spec-v">Precision Drilling &amp; Tapping</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-k">Quantity:</span>
+              <span class="spec-v">1 No.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="machine-mobile-card">
+          <div class="machine-mobile-card-header">
+            <div class="machine-mobile-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+              <strong>Plastic Injection Moulding Machine</strong>
+            </div>
+            <span class="machine-qty-pill">1 No.</span>
+          </div>
+          <div class="machine-mobile-specs">
+            <div class="spec-entry">
+              <span class="spec-k">Capacity:</span>
+              <span class="spec-v">Up to 150 Ton Clamping</span>
+            </div>
+            <div class="spec-entry">
+              <span class="spec-k">Quantity:</span>
+              <span class="spec-v">1 No.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="machinery-note">*Machine list is indicative and can be updated as facility capacity expands.</p>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. INDUSTRIES SECTION
+       ======================================================================== -->
+  <section class="section section-alt" id="industries">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow center">Sectors We Serve</div>
+        <h2>Industries We Serve</h2>
+        <p>Supplying precision manufactured tooling, machined components, and custom moulded parts to engineering leaders.</p>
+      </div>
+
+      <!-- Horizontal Slide Bar / Selector Tabs -->
+      <div class="horizontal-slide-bar-wrapper">
+        <div class="horizontal-slide-progress-track">
+          <div class="horizontal-slide-progress-fill" id="slideProgressFill"></div>
+        </div>
+        <div class="horizontal-slide-bar" id="slideBarTabs" role="tablist" aria-label="Select an industry">
+          <button class="slide-bar-item active" role="tab" aria-selected="true" data-slide="0">
+            <span class="slide-bar-num">01</span>
+            <span class="slide-bar-title">Automotive</span>
+          </button>
+          <button class="slide-bar-item" role="tab" aria-selected="false" data-slide="1">
+            <span class="slide-bar-num">02</span>
+            <span class="slide-bar-title">Electrical &amp; Electronics</span>
+          </button>
+          <button class="slide-bar-item" role="tab" aria-selected="false" data-slide="2">
+            <span class="slide-bar-num">03</span>
+            <span class="slide-bar-title">Consumer Products</span>
+          </button>
+          <button class="slide-bar-item" role="tab" aria-selected="false" data-slide="3">
+            <span class="slide-bar-num">04</span>
+            <span class="slide-bar-title">Medical</span>
+          </button>
+          <button class="slide-bar-item" role="tab" aria-selected="false" data-slide="4">
+            <span class="slide-bar-num">05</span>
+            <span class="slide-bar-title">Engineering</span>
+          </button>
+          <button class="slide-bar-item" role="tab" aria-selected="false" data-slide="5">
+            <span class="slide-bar-num">06</span>
+            <span class="slide-bar-title">Industrial</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile 2-Column Industries Quick Selector (<769px) -->
+      <div class="industries-mobile-grid" aria-label="Industries Quick Selector">
+        <button type="button" class="industry-mobile-grid-card active" data-slide="0">
+          <span class="ind-grid-num">01</span>
+          <span class="ind-grid-name">Automotive</span>
+        </button>
+        <button type="button" class="industry-mobile-grid-card" data-slide="1">
+          <span class="ind-grid-num">02</span>
+          <span class="ind-grid-name">Electrical</span>
+        </button>
+        <button type="button" class="industry-mobile-grid-card" data-slide="2">
+          <span class="ind-grid-num">03</span>
+          <span class="ind-grid-name">Consumer</span>
+        </button>
+        <button type="button" class="industry-mobile-grid-card" data-slide="3">
+          <span class="ind-grid-num">04</span>
+          <span class="ind-grid-name">Medical</span>
+        </button>
+        <button type="button" class="industry-mobile-grid-card" data-slide="4">
+          <span class="ind-grid-num">05</span>
+          <span class="ind-grid-name">Engineering</span>
+        </button>
+        <button type="button" class="industry-mobile-grid-card" data-slide="5">
+          <span class="ind-grid-num">06</span>
+          <span class="ind-grid-name">Industrial</span>
+        </button>
+      </div>
+
+      <!-- Horizontal Showcase Stage -->
+      <div class="industry-showcase-stage" id="industriesSlider">
+        <!-- Slide 0: Automotive -->
+        <div class="industry-showcase-slide active" data-slide-index="0">
+          <div class="showcase-visual-col">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/industry-automotive.jpg" alt="Automotive precision machined parts and moulded sensor housings by Maxister Tooling" width="720" height="420">
+              <div class="showcase-badge">01 • Automotive Sector</div>
+            </div>
+          </div>
+          <div class="showcase-info-col">
+            <div class="showcase-meta">
+              <div class="showcase-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 11.2 2 11.6 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+              </div>
+              <span class="showcase-sector-label">AUTOMOTIVE MANUFACTURING</span>
+            </div>
+            <h3 class="showcase-title">Automotive Precision Components</h3>
+            <p class="showcase-desc">High-precision CNC machined engine brackets, transmission fixtures, sensor housings, and custom automotive plastic clips manufactured to stringent automotive tolerances.</p>
+            
+            <div class="showcase-features-list">
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Precision engine &amp; chassis brackets</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Injection moulded sensor &amp; connector housings</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Custom tooling, jigs &amp; assembly fixtures</div>
+            </div>
+
+            <div class="showcase-materials-strip">
+              <span class="mat-label">Key Materials:</span>
+              <span class="mat-tags">Aluminium • Alloy Steel • Delrin / POM • Nylon</span>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="#contact" class="btn btn-primary btn-sm slide-inquiry-link" data-service="cnc-machining">
+                Request Automotive Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <div class="showcase-nav-arrows">
+                <button type="button" class="showcase-arrow-btn" id="sliderPrevBtn" aria-label="Previous industry" title="Previous Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="showcase-counter" id="sliderCurrentNum">01 / 06</span>
+                <button type="button" class="showcase-arrow-btn" id="sliderNextBtn" aria-label="Next industry" title="Next Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1: Electrical & Electronics -->
+        <div class="industry-showcase-slide" data-slide-index="1">
+          <div class="showcase-visual-col">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/industry-electrical.jpg" alt="Electrical switchgear enclosures and terminal blocks by Maxister Tooling" width="720" height="420" loading="lazy">
+              <div class="showcase-badge">02 • Electrical &amp; Electronics</div>
+            </div>
+          </div>
+          <div class="showcase-info-col">
+            <div class="showcase-meta">
+              <div class="showcase-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              </div>
+              <span class="showcase-sector-label">ELECTRICAL &amp; ELECTRONICS</span>
+            </div>
+            <h3 class="showcase-title">Electrical &amp; Switchgear Enclosures</h3>
+            <p class="showcase-desc">Precision injection moulded flame-retardant switchgear casings, modular terminal blocks, electrical connector housings, and PCB protection enclosures.</p>
+            
+            <div class="showcase-features-list">
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Flame retardant UL94 V-0 switchgear housings</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Precision modular terminal blocks &amp; connectors</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Custom brass insert moulding &amp; assembly</div>
+            </div>
+
+            <div class="showcase-materials-strip">
+              <span class="mat-label">Key Materials:</span>
+              <span class="mat-tags">FR ABS • Polycarbonate • Brass Inserts • PBT</span>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="#contact" class="btn btn-primary btn-sm slide-inquiry-link" data-service="injection-moulding">
+                Request Electrical Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <div class="showcase-nav-arrows">
+                <button type="button" class="showcase-arrow-btn prev-btn-clone" aria-label="Previous industry" title="Previous Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="showcase-counter">02 / 06</span>
+                <button type="button" class="showcase-arrow-btn next-btn-clone" aria-label="Next industry" title="Next Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Consumer Products -->
+        <div class="industry-showcase-slide" data-slide-index="2">
+          <div class="showcase-visual-col">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/industry-consumer.jpg" alt="Consumer appliance moulded plastic casings by Maxister Tooling" width="720" height="420" loading="lazy">
+              <div class="showcase-badge">03 • Consumer Products</div>
+            </div>
+          </div>
+          <div class="showcase-info-col">
+            <div class="showcase-meta">
+              <div class="showcase-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              </div>
+              <span class="showcase-sector-label">CONSUMER GOODS &amp; APPLIANCES</span>
+            </div>
+            <h3 class="showcase-title">Consumer Appliances &amp; Housings</h3>
+            <p class="showcase-desc">Aesthetic, ergonomic injection moulded housings, consumer appliance bezels, durable structural handles, and high-finish consumer assemblies.</p>
+            
+            <div class="showcase-features-list">
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Aesthetic high-gloss &amp; textured appliance bezels</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Ergonomic consumer device handles &amp; covers</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> High durability injection moulded plastic components</div>
+            </div>
+
+            <div class="showcase-materials-strip">
+              <span class="mat-label">Key Materials:</span>
+              <span class="mat-tags">High-Gloss ABS • PP • Polycarbonate • TPE</span>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="#contact" class="btn btn-primary btn-sm slide-inquiry-link" data-service="injection-moulding">
+                Request Consumer Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <div class="showcase-nav-arrows">
+                <button type="button" class="showcase-arrow-btn prev-btn-clone" aria-label="Previous industry" title="Previous Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="showcase-counter">03 / 06</span>
+                <button type="button" class="showcase-arrow-btn next-btn-clone" aria-label="Next industry" title="Next Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Medical -->
+        <div class="industry-showcase-slide" data-slide-index="3">
+          <div class="showcase-visual-col">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/industry-medical.jpg" alt="Medical grade plastic housings and diagnostic equipment parts by Maxister Tooling" width="720" height="420" loading="lazy">
+              <div class="showcase-badge">04 • Medical Sector</div>
+            </div>
+          </div>
+          <div class="showcase-info-col">
+            <div class="showcase-meta">
+              <div class="showcase-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect></svg>
+              </div>
+              <span class="showcase-sector-label">MEDICAL &amp; HEALTHCARE</span>
+            </div>
+            <h3 class="showcase-title">Medical Devices &amp; Diagnostics</h3>
+            <p class="showcase-desc">Clean precision moulded healthcare enclosures, laboratory diagnostic housings, transparent fluidic components, and high-tolerance medical tooling.</p>
+            
+            <div class="showcase-features-list">
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Cleanroom precision moulded medical housings</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Transparent optical &amp; fluidic diagnostic parts</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Strict quality control &amp; tight dimensional tolerances</div>
+            </div>
+
+            <div class="showcase-materials-strip">
+              <span class="mat-label">Key Materials:</span>
+              <span class="mat-tags">Medical PP • Optical Polycarbonate • Acrylic</span>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="#contact" class="btn btn-primary btn-sm slide-inquiry-link" data-service="injection-moulding">
+                Request Medical Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <div class="showcase-nav-arrows">
+                <button type="button" class="showcase-arrow-btn prev-btn-clone" aria-label="Previous industry" title="Previous Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="showcase-counter">04 / 06</span>
+                <button type="button" class="showcase-arrow-btn next-btn-clone" aria-label="Next industry" title="Next Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Engineering -->
+        <div class="industry-showcase-slide" data-slide-index="4">
+          <div class="showcase-visual-col">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/industry-engineering.jpg" alt="Precision CNC VMC milled tooling blocks and fixtures by Maxister Tooling" width="720" height="420" loading="lazy">
+              <div class="showcase-badge">05 • Precision Engineering</div>
+            </div>
+          </div>
+          <div class="showcase-info-col">
+            <div class="showcase-meta">
+              <div class="showcase-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <span class="showcase-sector-label">PRECISION TOOLING &amp; MACHINING</span>
+            </div>
+            <h3 class="showcase-title">Tooling, Jigs &amp; Fixtures</h3>
+            <p class="showcase-desc">Custom CNC &amp; VMC machined fixtures, inspection jigs, precision ground tooling blocks, mould cores, and multi-axis machined industrial assemblies.</p>
+            
+            <div class="showcase-features-list">
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Custom CNC &amp; VMC machined clamping fixtures</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Precision ground inspection jigs &amp; gauges</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Multi-cavity injection mould cores &amp; cavities</div>
+            </div>
+
+            <div class="showcase-materials-strip">
+              <span class="mat-label">Key Materials:</span>
+              <span class="mat-tags">Tool Steel (P20/H13) • Mild Steel • SS 304/316 • Aluminium</span>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="#contact" class="btn btn-primary btn-sm slide-inquiry-link" data-service="tooling-fixtures">
+                Request Tooling Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <div class="showcase-nav-arrows">
+                <button type="button" class="showcase-arrow-btn prev-btn-clone" aria-label="Previous industry" title="Previous Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="showcase-counter">05 / 06</span>
+                <button type="button" class="showcase-arrow-btn next-btn-clone" aria-label="Next industry" title="Next Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5: Industrial -->
+        <div class="industry-showcase-slide" data-slide-index="5">
+          <div class="showcase-visual-col">
+            <div class="showcase-img-wrap">
+              <img src="assets/images/industry-industrial.jpg" alt="Industrial machinery hydraulic manifolds and pump bodies by Maxister Tooling" width="720" height="420" loading="lazy">
+              <div class="showcase-badge">06 • Industrial Machinery</div>
+            </div>
+          </div>
+          <div class="showcase-info-col">
+            <div class="showcase-meta">
+              <div class="showcase-icon-box" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <span class="showcase-sector-label">HEAVY INDUSTRIAL EQUIPMENT</span>
+            </div>
+            <h3 class="showcase-title">Machinery &amp; Hydraulic Components</h3>
+            <p class="showcase-desc">Heavy-duty CNC machined hydraulic manifold blocks, pump bodies, industrial valve components, pipe flanges, and wear-resistant machinery components.</p>
+            
+            <div class="showcase-features-list">
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> CNC machined hydraulic manifold blocks &amp; ports</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Heavy-duty pump bodies &amp; industrial valve components</div>
+              <div class="showcase-feat-item"><span class="feat-bullet">✓</span> Precision pipe flanges &amp; heavy equipment hardware</div>
+            </div>
+
+            <div class="showcase-materials-strip">
+              <span class="mat-label">Key Materials:</span>
+              <span class="mat-tags">Forged Steel • Cast Iron • High-Pressure Alloys</span>
+            </div>
+
+            <div class="showcase-actions">
+              <a href="#contact" class="btn btn-primary btn-sm slide-inquiry-link" data-service="cnc-machining">
+                Request Industrial Quote <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+              <div class="showcase-nav-arrows">
+                <button type="button" class="showcase-arrow-btn prev-btn-clone" aria-label="Previous industry" title="Previous Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <span class="showcase-counter">06 / 06</span>
+                <button type="button" class="showcase-arrow-btn next-btn-clone" aria-label="Next industry" title="Next Slide">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       9. PRODUCTS / COMPONENTS GALLERY
+       ======================================================================== -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow center">Portfolio Examples</div>
+        <h2>Manufactured Components &amp; Gallery</h2>
+        <p>Representative examples of CNC machined parts, custom injection moulded components, and precision fixtures manufactured at our facility.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="gallery-filters" role="tablist" aria-label="Component Categories">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Components</button>
+        <button class="filter-btn" data-filter="machined" role="tab" aria-selected="false">CNC Machined Parts</button>
+        <button class="filter-btn" data-filter="moulded" role="tab" aria-selected="false">Injection Moulded</button>
+        <button class="filter-btn" data-filter="fixtures" role="tab" aria-selected="false">Tooling &amp; Fixtures</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Item 1: Machined Bushes & Flanges -->
+        <div class="gallery-item" data-category="machined" data-desc="Precision stainless steel stepped shafts, turned bushings, and CNC drilled flanges machined to tight concentricity tolerances." tabindex="0" role="button" aria-label="View Machined Bushings & Flanges">
+          <div class="gallery-thumb-box">
+            <img src="assets/images/part-machined-metal.jpg" alt="Precision CNC turned bushes, stepped shafts and flanges" width="400" height="300" loading="eager">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Precision Machining</span>
+              <h4 class="gallery-name">Bushes &amp; Flanges</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Injection Moulded Parts -->
+        <div class="gallery-item" data-category="moulded" data-desc="Custom injection moulded engineering polymer housings, gears, and structural clips with precise snap-fit dimensions." tabindex="0" role="button" aria-label="View Custom Moulded Components">
+          <div class="gallery-thumb-box">
+            <img src="assets/images/part-plastic-moulding.jpg" alt="Injection moulded plastic housings, clips and gears on blueprint" width="400" height="300" loading="eager">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Injection Moulding</span>
+              <h4 class="gallery-name">Plastic Housings &amp; Parts</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Custom Fixtures & Tooling -->
+        <div class="gallery-item" data-category="fixtures" data-desc="Custom clamping fixtures, modular plates, and hardened steel locating pins manufactured for precision repeatability." tabindex="0" role="button" aria-label="View Fixtures & Locating Pins">
+          <div class="gallery-thumb-box">
+            <img src="assets/images/part-fixtures-tooling.jpg" alt="Machining fixtures, toggle clamp jigs, and locating pins" width="400" height="300" loading="eager">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">Fixtures &amp; Tooling</span>
+              <h4 class="gallery-name">Clamping Jigs &amp; Fixtures</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Complex 3D Machined Block -->
+        <div class="gallery-item" data-category="machined" data-desc="Intricate 3D CNC VMC milled aluminum manifold block with internal cooling grooves, bores, and precision chamfered contours." tabindex="0" role="button" aria-label="View VMC Manifold Block">
+          <div class="gallery-thumb-box">
+            <img src="assets/images/part-vmc-complex.jpg" alt="Complex 3D CNC VMC milled aircraft-grade aluminum manifold block" width="400" height="300" loading="eager">
+            <div class="gallery-overlay">
+              <span class="gallery-cat">VMC Job Work</span>
+              <h4 class="gallery-name">Complex 3D Manifold</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Dialog -->
+  <dialog class="lightbox-dialog" id="gallery-lightbox" aria-modal="true" aria-label="Component Preview">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" aria-label="Close Lightbox">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="lightbox-img-box">
+        <img src="" alt="" class="lightbox-img">
+      </div>
+      <div class="lightbox-meta">
+        <span class="gallery-cat lightbox-category">Category</span>
+        <h3 class="lightbox-title" style="margin-top: 0.25rem; font-size: 1.35rem;">Component Title</h3>
+        <p class="lightbox-desc" style="margin-top: 0.5rem; font-size: 0.95rem; color: var(--text-muted);"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ========================================================================
+       10. WHY MAXISTER TOOLING
+       ======================================================================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow center">Why Partner With Us</div>
+        <h2>Why Choose Maxister?</h2>
+        <p>We pride ourselves on dependable precision engineering, robust quality practices, and responsive customer collaboration.</p>
+      </div>
+
+      <div class="why-grid">
+        <!-- 1 -->
+        <div class="why-card">
+          <div class="why-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+          </div>
+          <h3 class="why-title">Precision Engineering</h3>
+          <p class="why-desc">Accurate and consistent manufacturing solutions tailored to tight tolerance requirements.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="why-card">
+          <div class="why-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="why-title">Quality Assurance</h3>
+          <p class="why-desc">Strong focus on quality control and reliable output across all production batches.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="why-card">
+          <div class="why-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <h3 class="why-title">Advanced Technology</h3>
+          <p class="why-desc">Modern CNC/VMC machinery and proven manufacturing processes for superior results.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="why-card">
+          <div class="why-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+          </div>
+          <h3 class="why-title">Skilled Team</h3>
+          <p class="why-desc">Experienced professionals focused on precision, programming, and workmanship.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="why-card">
+          <div class="why-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="why-title">On-Time Delivery</h3>
+          <p class="why-desc">Reliable production schedules and commitment to meeting client delivery milestones.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="why-card">
+          <div class="why-icon-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h3 class="why-title">Customer-Centric Approach</h3>
+          <p class="why-desc">Solutions customized to specific drawings, quantities, and operational requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. QUALITY SECTION
+       ======================================================================== -->
+  <section class="section" id="quality">
+    <div class="container">
+      <div class="section-header center">
+        <div class="eyebrow center">Quality Commitment</div>
+        <h2>Quality Is Not An Option.<br>It's Our Standard.</h2>
+        <p>
+          At Maxister Tooling, quality is integrated into every stage of manufacturing — from machining and moulding to inspection and final delivery.
+        </p>
+      </div>
+
+      <!-- 5-Step Process Track -->
+      <div class="quality-process-wrapper">
+        <div class="process-steps-track">
+          <!-- Step 1 -->
+          <div class="process-step-node">
+            <div class="step-num-pill">01</div>
+            <div class="step-text-wrap">
+              <h3 class="step-title">Understand Requirements</h3>
+              <p class="step-desc">Detailed review of drawings, tolerances, material specs, and application needs.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step-node">
+            <div class="step-num-pill">02</div>
+            <div class="step-text-wrap">
+              <h3 class="step-title">Plan &amp; Engineer</h3>
+              <p class="step-desc">Toolpath strategy, moulding parameters, clamping fixtures, and process planning.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step-node">
+            <div class="step-num-pill">03</div>
+            <div class="step-text-wrap">
+              <h3 class="step-title">Manufacture</h3>
+              <p class="step-desc">High-precision execution on CNC/VMC and injection moulding machinery.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="process-step-node">
+            <div class="step-num-pill">04</div>
+            <div class="step-text-wrap">
+              <h3 class="step-title">Inspect</h3>
+              <p class="step-desc">Dimensional verification, surface check, and tolerance confirmation against drawings.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="process-step-node">
+            <div class="step-num-pill">05</div>
+            <div class="step-text-wrap">
+              <h3 class="step-title">Deliver</h3>
+              <p class="step-desc">Protective packaging, documentation, and on-time shipment to client facility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       12. CALL TO ACTION BANNER
+       ======================================================================== -->
+  <section class="section" style="padding-top: 1rem; padding-bottom: 2rem;">
+    <div class="container">
+      <div class="cta-banner">
+        <div class="cta-banner-content">
+          <div class="eyebrow" style="color: var(--accent-burnt);">Ready To Collaborate</div>
+          <h2 class="cta-banner-title">Have A Component<br>To Manufacture?</h2>
+          <p class="cta-banner-desc">
+            Talk to Maxister Tooling about your tooling, machining or plastic component requirements. We provide prompt quotes and technical consultation.
+          </p>
+          <div class="cta-banner-actions">
+            <a href="#contact" class="btn btn-primary">
+              Request A Quote
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="tel:8380801307" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Call +91 8380801307
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       13. CONTACT SECTION & RFQ FORM
+       ======================================================================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Let's Build Something Precise.</h2>
+        <p>Send your drawings, component requirements, or service enquiry to receive an engineering evaluation and quotation.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Information -->
+        <div class="contact-info-card">
+          <div class="contact-person-badge">
+            <div class="person-avatar-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <div class="person-name">Prashant Sawant</div>
+              <div class="person-role">Maxister Tooling • Pune</div>
+            </div>
+          </div>
+
+          <div class="contact-items-list">
+            <!-- Phone -->
+            <div class="contact-item-row">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Phone / Direct Line</div>
+                <div class="contact-item-val">
+                  <a href="tel:8380801307" title="Call Prashant Sawant">8380801307</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div class="contact-item-row">
+              <div class="contact-item-icon" style="color: #25D366; background-color: rgba(37, 211, 102, 0.1);" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">WhatsApp RFQ</div>
+                <div class="contact-item-val">
+                  <a href="https://wa.me/918380801307?text=Hello%20Maxister%20Tooling%2C%20I%20would%20like%20to%20request%20a%20quotation." target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" style="color: #128C7E;">+91 8380801307</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item-row">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Email Enquiries</div>
+                <div class="contact-item-val">
+                  <a href="mailto:maxistertooling@gmail.com" title="Email Maxister Tooling">maxistertooling@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-item-row">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Facility Address</div>
+                <div class="contact-item-val" style="font-weight: 500; font-size: 0.95rem; line-height: 1.5;">
+                  Near Saraswati English School,<br>
+                  Rupeenagar, Talwade,<br>
+                  Pune – 411062, Maharashtra, India
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Embedded Map -->
+          <div class="map-embed-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=Rupeenagar%2C+Talwade%2C+Pune%2C+Maharashtra+411062&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              title="Location Map of Rupeenagar, Talwade, Pune" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div style="margin-top: 0.75rem; text-align: right;">
+            <a href="https://maps.google.com/?q=Rupeenagar,+Talwade,+Pune,+Maharashtra+411062" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: var(--accent-burnt); font-weight: 600;">
+              Open in Google Maps ➔
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: RFQ Form -->
+        <div class="rfq-form-card">
+          <div class="form-header">
+            <h3>Request A Quotation</h3>
+            <p style="font-size: 0.925rem; color: var(--text-muted);">Fill out your project details for an engineering response.</p>
+          </div>
+
+          <form id="rfq-form" novalidate>
+            <div class="form-grid">
+              <!-- Name -->
+              <div class="form-group">
+                <label for="rfq-name" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="rfq-name" name="name" class="form-control" placeholder="e.g. Rahul Sharma" required autocomplete="name">
+              </div>
+
+              <!-- Company -->
+              <div class="form-group">
+                <label for="rfq-company" class="form-label">Company Name</label>
+                <input type="text" id="rfq-company" name="company" class="form-control" placeholder="e.g. Precision Auto Components" autocomplete="organization">
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="rfq-phone" class="form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="rfq-phone" name="phone" class="form-control" placeholder="e.g. 8380801307" required autocomplete="tel">
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="rfq-email" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="rfq-email" name="email" class="form-control" placeholder="e.g. name@company.com" required autocomplete="email">
+              </div>
+
+              <!-- Service Required -->
+              <div class="form-group full-width">
+                <label for="service-select" class="form-label">Service Required <span class="req">*</span></label>
+                <select id="service-select" name="service" class="form-control" required>
+                  <option value="" disabled selected>Select Required Service</option>
+                  <option value="Plastic Injection Moulding">Plastic Injection Moulding</option>
+                  <option value="CNC Job Work">CNC Job Work</option>
+                  <option value="VMC Job Work">VMC Job Work</option>
+                  <option value="Prototyping">Prototyping</option>
+                  <option value="Production Components">Production Components</option>
+                  <option value="Other">Other / Custom Requirement</option>
+                </select>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group full-width">
+                <label for="rfq-message" class="form-label">Component / Project Requirements <span class="req">*</span></label>
+                <textarea id="rfq-message" name="message" class="form-control" placeholder="Please describe component dimensions, quantity, material (e.g. Aluminum, MS, Delrin, Nylon), or drawings available..." required></textarea>
+              </div>
+
+              <!-- Attach Drawings, Photos & CAD Files -->
+              <div class="form-group full-width">
+                <label class="form-label" for="rfq-files">
+                  Attach Drawings, Photos or CAD Files
+                  <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">(Optional)</span>
+                </label>
+                <div class="upload-dropzone" id="upload-dropzone" tabindex="0" role="button" aria-label="Upload component drawings or photos">
+                  <input type="file" id="rfq-files" name="files" class="file-input-hidden" multiple accept=".pdf,.dwg,.dxf,.step,.stp,.iges,.igs,.sldprt,.x_t,.png,.jpg,.jpeg">
+                  <div class="dropzone-inner">
+                    <div class="upload-icon-circle" aria-hidden="true">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="2" x2="12" y2="15"></line>
+                      </svg>
+                    </div>
+                    <div class="dropzone-text">
+                      <strong>Click to browse files</strong> or drag &amp; drop here
+                    </div>
+                    <div class="dropzone-hint">
+                      PDF, DWG, DXF, STEP, STP, IGES, SolidWorks, Images (Max 25 MB each)
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Attached Files Preview Chips List -->
+                <div class="attached-files-list" id="attached-files-list" aria-live="polite"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group full-width" style="margin-top: 0.5rem;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  Send Enquiry
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Form Status Feedback Box -->
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       14. FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Tagline -->
+        <div class="footer-brand">
+          <img src="assets/images/logo-navbar-dark.png" alt="Maxister Tooling Logo" class="footer-logo-img" width="210" height="48" loading="lazy">
+          <div class="footer-tagline">
+            "Precision Engineered. Quality Delivered."
+          </div>
+          <p class="footer-desc">
+            Pune-based precision manufacturing enterprise specializing in Plastic Injection Moulding and CNC/VMC Job Work for engineering industries.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#capabilities">Capabilities</a></li>
+            <li><a href="#machinery">Our Machinery</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#gallery">Components</a></li>
+            <li><a href="#quality">Quality Standards</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Plastic Injection Moulding</a></li>
+            <li><a href="#services">CNC Job Work</a></li>
+            <li><a href="#services">VMC Job Work</a></li>
+            <li><a href="#capabilities">Prototyping</a></li>
+            <li><a href="#capabilities">Production Components</a></li>
+            <li><a href="#services">Tooling &amp; Fixtures</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              <span>Prashant Sawant</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:8380801307">8380801307</a>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:maxistertooling@gmail.com">maxistertooling@gmail.com</a>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Rupeenagar, Talwade, Pune – 411062, Maharashtra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maxister Tooling. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#home">Back To Top &uarr;</a>
+          <a href="#contact">Request Quotation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       15. MOBILE STICKY FLOATING ACTION BAR (<768px)
+       ======================================================================== -->
+  <div class="mobile-sticky-bar" aria-label="Quick Mobile Actions">
+    <div class="mobile-sticky-bar-inner">
+      <a href="tel:8380801307" class="mobile-action-btn action-call" aria-label="Call 8380801307">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>Call</span>
+      </a>
+      <a href="https://wa.me/918380801307?text=Hello%20Maxister%20Tooling%2C%20I%20would%20like%20to%20request%20a%20quotation." target="_blank" rel="noopener noreferrer" class="mobile-action-btn action-whatsapp" aria-label="WhatsApp Maxister Tooling">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        <span>WhatsApp</span>
+      </a>
+      <a href="#contact" class="mobile-action-btn action-quote" aria-label="Request a Quotation">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        <span>Get Quote</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Back to top floating button -->
+  <button class="back-to-top" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Core Scripts -->
+  <script src="js/app.js?v=4.0"></script>
+  <script src="js/slider.js?v=4.0"></script>
+  <script src="js/gallery.js?v=4.0"></script>
+  <script src="js/contact.js?v=4.0"></script>
+</body>
+</html>

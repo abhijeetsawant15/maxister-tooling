@@ -1,0 +1,296 @@
+/* ==========================================================================
+   MAXISTER TOOLING — Core Design Tokens & System Styles
+   Precision Engineered. Quality Delivered.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Brand Color Palette */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F7F6F3;
+  --bg-tertiary: #EFECE6;
+  --bg-dark: #121212;
+  --bg-dark-surface: #1B1B1B;
+  --bg-dark-card: #222222;
+
+  --accent-burnt: #9A4528;
+  --accent-burnt-hover: #7E361D;
+  --accent-burnt-light: rgba(154, 69, 40, 0.08);
+  --accent-burnt-border: rgba(154, 69, 40, 0.22);
+  --accent-gold: #C69A43;
+
+  /* Typography Colors */
+  --text-dark: #171717;
+  --text-muted: #555555;
+  --text-light: #F7F6F3;
+  --text-light-muted: #A3A19C;
+
+  /* Borders & Dividers */
+  --border-color: #E5E2DE;
+  --border-light: #ECE9E4;
+  --border-dark: #2C2C2C;
+  --border-focus: #9A4528;
+
+  /* Shadows & Elevations */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-lift: 0 18px 40px rgba(0, 0, 0, 0.12);
+
+  /* Spacing */
+  --container-max: 1320px;
+  --section-pad-y: clamp(4rem, 6vw, 7rem);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-primary);
+  line-height: 1.6;
+  font-weight: 400;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-wrap: break-word;
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--accent-burnt);
+  outline-offset: 3px;
+}
+
+/* Blueprint / Precision Technical Grid Accents */
+.tech-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.tech-grid-dark {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Typography Hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.85rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.85rem;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-muted);
+  font-size: 1.025rem;
+  line-height: 1.68;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+  padding-right: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.section {
+  padding-top: var(--section-pad-y);
+  padding-bottom: var(--section-pad-y);
+  position: relative;
+}
+
+.section-alt {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: #FFFFFF;
+}
+
+.section-dark p {
+  color: var(--text-light-muted);
+}
+
+/* Section Headers */
+.section-header {
+  margin-bottom: clamp(2.5rem, 4vw, 4rem);
+}
+
+.section-header.center {
+  text-align: center;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Engineering Eyebrow Badge */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.775rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-burnt);
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: var(--accent-burnt);
+}
+
+.eyebrow.center::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background-color: var(--accent-burnt);
+}
+
+.eyebrow-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--accent-burnt-light);
+  border: 1px solid var(--accent-burnt-border);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-burnt);
+}
+
+.eyebrow-pill svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* Precision Text Highlight */
+.text-accent {
+  color: var(--accent-burnt);
+}
+
+.text-gold {
+  color: var(--accent-gold);
+}
+
+/* Technical Marks */
+.tech-corner-mark {
+  position: relative;
+}
+
+.tech-corner-mark::after {
+  content: '+';
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: var(--accent-burnt);
+  font-weight: 700;
+}
+
+/* Screen Reader Only Utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

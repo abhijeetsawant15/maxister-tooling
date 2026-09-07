@@ -1,0 +1,9 @@
+node_modules/
+*.log
+verified-*.png
+live-verified-*.png
+verify_*.js
+test_*.py
+.surgeignore
+CNAME
+.vercel/
