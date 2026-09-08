@@ -7,3 +7,5 @@ test_*.py
 .surgeignore
 CNAME
 .vercel/
+
+.vercel
